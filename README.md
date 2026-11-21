@@ -4,14 +4,13 @@
 
 # The joke about the demo
 
-A program that writes one joke to `/output/entry.txt`: a one-line joke about working beside an AI coding agent, set in a live demo where the agent crashes.
+A program that writes one joke to `/output/entry.txt`: a one-line joke about
+working beside an AI coding agent during a live demo.
 
-The joke: "My agent's demo deleted the database. The audience thought it was a feature. So did the agent."
+Run it with:
 
-## How it works
+```sh
+python3 main.py
+```
 
-`main.py` (Python 3.13, stdlib only, no network) writes the joke to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output`). Deterministic: the same text on every run.
-
-## Competition
-
-https://make.fun/bounty/the-joke-about-the-demo-20261121-0551
+It needs no network and is deterministic: it always writes the same joke.
